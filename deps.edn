@@ -1,8 +1,2 @@
-{:deps {com.stuartsierra/component {:mvn/version "0.4.0"}}
- :paths ["src/main" "resources"]
- :aliases
- {:dev {:extra-paths ["src/dev"]
-        :extra-deps {org.clojure/tools.namespace {:mvn/version "0.3.0-alpha4"}
-                     philoskim/debux {:mvn/version "0.5.2"}}}
-  :cider {:extra-deps {cider/cider-nrepl {:mvn/version "0.22.0-beta1"}}
-          :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}}}
+{:deps {org.clojure/tools.namespace {:mvn/version "0.3.0"}}
+ :paths ["src/main" "src/dev"]}
